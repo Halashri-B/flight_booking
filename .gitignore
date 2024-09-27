@@ -1,0 +1,9 @@
+new
+.env
+__pycache__/
+*.py[cod]
+**/__pycache__/
+.vscode/
+static/
+*.pem
+db*.json
