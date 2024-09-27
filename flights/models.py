@@ -11,6 +11,7 @@ class FlightUserManager(BaseUserManager):
             raise ValueError('Users must have a password')
         user = self.model(
             phone_number=phone_number,
+            password=password
         )
         user.save(using=self._db)
         return user
