@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG') == 'True'
+DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ["13.235.45.20"]
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '13.235.45.20']
 
 
 # Application definition
@@ -81,38 +81,6 @@ WSGI_APPLICATION = 'flight_booking.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-
-# delete
-# # DATABASES = {
-# #     'default': {
-# #         'ENGINE': 'django.db.backends.sqlite3',
-# #         'NAME': BASE_DIR / 'db.sqlite3',
-# #     }
-# # }
-
-
-# # DATABASES = {
-# #     'default': {
-# #         'ENGINE': 'django.db.backends.postgresql',
-# #         'NAME': 'backendwillson',
-# #         'USER': 'postgres',          
-# #         'PASSWORD': 'XY8P13VJYyJRXX6uupkn',
-# #         'HOST': 'backendwillson.c10ugo0aw5qe.us-east-1.rds.amazonaws.com',
-# #         'PORT': '5432',
-# #     }
-# # }
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'willsonbackend',  # Updated database name
-#         'USER': 'postgres',  # Master username
-#         'PASSWORD': 'uSN9PLNUAUVC9dX7iQ1w',  # Master password
-#         'HOST': 'willsondatabase.c7eoe0uc8zc2.ap-south-1.rds.amazonaws.com',  # Endpoint
-#         'PORT': '5432',  # Default PostgreSQL port
-#     }
-# }
 
 DATABASES = {
     'default': {
